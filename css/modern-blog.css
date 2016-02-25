@@ -211,11 +211,11 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	overflow: hidden;
-	overflow-y: auto;
+	overflow-y: scroll;
 }
 
 body.body--hidden {
-	overflow: hidden;
+	overflow: scroll;
 }
 
 body.body--hidden .header {
