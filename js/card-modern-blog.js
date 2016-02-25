@@ -159,8 +159,8 @@ var Card = (function (window) {
             height: rect.height,
             x: rect.left,
             y: rect.top,
-            position: 'fixed',
-            overflow: 'hidden'
+            position: 'absolute',
+            overflow: 'auto'
         });
 
         TL.to([this._container, track], 2, {
@@ -222,7 +222,7 @@ var Card = (function (window) {
                 y: 0
             },
             onComplete: function () {
-                $(this._container).css('overflow', 'auto');
+                $(this._container).css('overflow', 'hidden');
             }.bind(this),
             ease: Power2.easeOut
         });
