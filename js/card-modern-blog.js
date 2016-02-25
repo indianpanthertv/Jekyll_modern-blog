@@ -222,7 +222,7 @@ var Card = (function (window) {
                 y: 0
             },
             onComplete: function () {
-                $(this._container).css('overflow', 'hidden');
+                $(this._container).css('overflow', 'auto');
             }.bind(this),
             ease: Power2.easeOut
         });
