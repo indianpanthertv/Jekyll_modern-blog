@@ -159,8 +159,8 @@ var Card = (function (window) {
             height: rect.height,
             x: rect.left,
             y: rect.top,
-            position: 'absolute',
-            overflow: 'auto'
+            position: 'fixed',
+            overflow: 'hidden'
         });
 
         TL.to([this._container, track], 2, {
